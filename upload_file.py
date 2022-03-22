@@ -55,4 +55,4 @@ def dropbox_upload_file(local_path, local_file, dropbox_file_path):
     except Exception as e:
         print('Error uploading file to Dropbox: ' + str(e))
 
-dropbox_upload_file(local_path, local_file, dropbox_file_path)
+dropbox_upload_file('/Users', 'Test.txt', '/home/Documents/projeno_12.txt')

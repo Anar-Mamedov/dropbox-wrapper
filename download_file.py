@@ -2,6 +2,7 @@ import pathlib
 import pandas as pd
 import dropbox
 from dropbox.exceptions import AuthError
+from psutil import users
 
 
 # Dropbox uygulamasını kurma ve Token alma
@@ -41,4 +42,4 @@ def dropbox_download_file(dropbox_file_path, local_file_path):
 
 
 
-dropbox_download_file(dropbox_file_path, local_file_path)
+dropbox_download_file('/Documents', '/Users')

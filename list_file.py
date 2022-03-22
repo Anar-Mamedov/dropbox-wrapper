@@ -6,7 +6,7 @@ from dropbox.exceptions import AuthError
 
 # Dropbox uygulamasını kurma ve Token alma
 
-DROPBOX_ACCESS_TOKEN = 'sl.BERmUAWHUCBduRQ15CRkYaXHggMeNdP85vb7Ur5U0o3LbVGDJHcub1sfXplqd9l3GRb9omDhKI-bLBqQ0NISyxeIXWHJ0pMtqip1u9wfl1bk1XKgY5FPK4fJ4CdfxT7D6KueGl4'
+DROPBOX_ACCESS_TOKEN = 'sl.BER8N6Vp1Fc8ckILMV-ZbLqi1SaBhBXUCp1nvooW_oNBi1JSh3v-2rl8Vl6718sO076h8sORiJBCUmaUmubqJEupPJ5udnRNla2N9EF4eM4xRMhOOyG7FTBuzG0oDb4nAGY8TEhAr7B9'
 
 
 
@@ -53,4 +53,4 @@ def dropbox_list_files(path):
 
 
 
-dropbox_list_files('sl.BERmUAWHUCBduRQ15CRkYaXHggMeNdP85vb7Ur5U0o3LbVGDJHcub1sfXplqd9l3GRb9omDhKI-bLBqQ0NISyxeIXWHJ0pMtqip1u9wfl1bk1XKgY5FPK4fJ4CdfxT7D6KueGl4')
+dropbox_list_files('/Documents')
