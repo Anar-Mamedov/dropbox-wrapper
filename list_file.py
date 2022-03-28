@@ -6,7 +6,7 @@ from dropbox.exceptions import AuthError
 
 # Dropbox uygulamasını kurma ve Token alma
 
-DROPBOX_ACCESS_TOKEN = 'sl.BER8N6Vp1Fc8ckILMV-ZbLqi1SaBhBXUCp1nvooW_oNBi1JSh3v-2rl8Vl6718sO076h8sORiJBCUmaUmubqJEupPJ5udnRNla2N9EF4eM4xRMhOOyG7FTBuzG0oDb4nAGY8TEhAr7B9'
+DROPBOX_ACCESS_TOKEN = 'sl.BErPy1Wgev4u6-utXHPXh9T6WzLUSzGrQWEWBqxxOu9JPplHX7hGiCZENjr2Acjsq-ZclfyA370X_8TYH4Y_VKYovb24A4wMPqY2xbgVuEppSJ-6E4rnMpl24JbxFe0goBOezik'
 
 
 
@@ -34,9 +34,12 @@ def dropbox_list_files(path):
 
     try:
         files = dbx.files_list_folder(path).entries
+
         files_list = []
         for file in files:
+
             if isinstance(file, dropbox.files.FileMetadata):
+
                 metadata = {
                     'name': file.name,
                     'path_display': file.path_display,
@@ -52,5 +55,4 @@ def dropbox_list_files(path):
         print('Error getting list of files from Dropbox: ' + str(e))
 
 
-
-dropbox_list_files('/Documents')
+print(dropbox_list_files("/Documents"))

@@ -6,7 +6,7 @@ from dropbox.exceptions import AuthError
 
 # Dropbox uygulamasını kurma ve Token alma
 
-DROPBOX_ACCESS_TOKEN = 'sl.BERmUAWHUCBduRQ15CRkYaXHggMeNdP85vb7Ur5U0o3LbVGDJHcub1sfXplqd9l3GRb9omDhKI-bLBqQ0NISyxeIXWHJ0pMtqip1u9wfl1bk1XKgY5FPK4fJ4CdfxT7D6KueGl4'
+DROPBOX_ACCESS_TOKEN = 'sl.BErPy1Wgev4u6-utXHPXh9T6WzLUSzGrQWEWBqxxOu9JPplHX7hGiCZENjr2Acjsq-ZclfyA370X_8TYH4Y_VKYovb24A4wMPqY2xbgVuEppSJ-6E4rnMpl24JbxFe0goBOezik'
 
 
 
@@ -49,10 +49,11 @@ def dropbox_upload_file(local_path, local_file, dropbox_file_path):
         local_file_path = pathlib.Path(local_path) / local_file
 
         with local_file_path.open("rb") as f:
+
             meta = dbx.files_upload(f.read(), dropbox_file_path, mode=dropbox.files.WriteMode("overwrite"))
 
             return meta
     except Exception as e:
         print('Error uploading file to Dropbox: ' + str(e))
 
-dropbox_upload_file('/Users', 'Test.txt', '/home/Documents/projeno_12.txt')
+dropbox_upload_file('/Users/anarmammadov/Desktop/', 'Test.txt', '/Documents/Test.txt')
