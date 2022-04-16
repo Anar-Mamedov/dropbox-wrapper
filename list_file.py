@@ -6,7 +6,7 @@ from dropbox.exceptions import AuthError
 
 # Dropbox uygulamasını kurma ve Token alma
 
-DROPBOX_ACCESS_TOKEN = 'sl.BErPy1Wgev4u6-utXHPXh9T6WzLUSzGrQWEWBqxxOu9JPplHX7hGiCZENjr2Acjsq-ZclfyA370X_8TYH4Y_VKYovb24A4wMPqY2xbgVuEppSJ-6E4rnMpl24JbxFe0goBOezik'
+DROPBOX_ACCESS_TOKEN = 'sl.BEumVFkbqzoz3JrEOTzKpATAxsKjCGLlpdEojFhN0QSrYQfTuYzd4jZRrsrryEbjRuZQNKRaALK09bPK0mlEDWFOe1y50D1OwUUChOC77oT2nOrf9r3aRI9-1ktqGljo_sDOUoE'
 
 
 
